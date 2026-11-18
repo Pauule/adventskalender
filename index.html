@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#112b25"><meta name="description" content="24 kleine Rätsel und 24 Überraschungen für Emma.">
+<title>Emmas Adventsabenteuer</title>
+<link rel="icon" href="stern.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<script defer src="raetsel.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<div class="page">
+<header class="mast"><span class="brand"><b aria-hidden="true">✦</b> WINTERPOST FÜR EMMA</span><span class="edition">DEZ. 2026</span></header>
+<main id="main">
+<section class="hero">
+<div class="hero-copy"><p class="eyebrow">DEIN DIGITALER ADVENTSKALENDER</p><h1>Emmas<br>Advents<span>abenteuer.</span></h1>
+<p class="intro">24 kleine Rätsel, 24 Überraschungen.<br>Löse das Rätsel und finde dein Päckchen.</p></div>
+</section>
+<section class="today" aria-labelledby="todayTitle">
+<div class="today-icon" aria-hidden="true">✧</div><div><p class="eyebrow" id="todayLabel"></p><h2 id="todayTitle"></h2><p class="today-text" id="todayText"></p></div>
+<button id="todayButton" class="primary" hidden>Zum Rätsel <span aria-hidden="true">→</span></button>
+</section>
+<section class="calendar" aria-labelledby="calendarTitle">
+<div class="section-head"><div><p class="eyebrow">01 — 24 DEZEMBER</p><h2 id="calendarTitle">Deine Türchen</h2></div><span id="count" class="count"></span></div>
+<div class="progress" id="progress" role="progressbar" aria-label="Entdeckte Päckchen" aria-valuemin="0" aria-valuemax="24"><div></div></div>
+<div class="grid" id="calendar"></div>
+<div class="legend"><span>◇ &nbsp; Verfügbar</span><span>✓ &nbsp; Päckchen gefunden</span><span>· &nbsp; Noch geschlossen</span></div>
+</section>
+</main>
+<footer><span>✦</span> Für Emma, von Paul.</footer>
+</div>
+<dialog id="door" aria-labelledby="doorTitle"><div id="doorInner"></div></dialog>
+<template id="doorTemplate"><header class="dialog-head"><button type="button" class="quiet back" data-close>← Kalender</button><button type="button" class="close" aria-label="Türchen schließen" data-close>×</button></header><div id="doorContent"></div></template>
+</body></html>
