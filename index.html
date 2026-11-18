@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#112b25"><meta name="description" content="24 kleine Rätsel und 24 Überraschungen für Emma.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>Emmas Adventsabenteuer</title>
 <link rel="icon" href="stern.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-<script defer src="raetsel.js"></script><script defer src="app.js"></script>
+<script defer src="raetsel.js"></script><script defer src="app.js"></script><script defer src="pwa.js"></script>
 </head>
 <body>
 <div class="page">
@@ -25,6 +27,15 @@
 <div class="grid" id="calendar"></div>
 <div class="legend"><span>◇ &nbsp; Verfügbar</span><span>✓ &nbsp; Päckchen gefunden</span><span>· &nbsp; Noch geschlossen</span></div>
 </section>
+<details class="install-card" id="install-card">
+<summary>Kalender aufs Handy holen</summary>
+<div class="install-copy">
+<button type="button" class="primary" id="install-button" hidden>App installieren</button>
+<p><strong>iPhone:</strong> In Safari auf „Teilen“ und dann auf „Zum Home-Bildschirm“ tippen. Falls angezeigt, „Als Web-App öffnen“ einschalten.</p>
+<p><strong>Android:</strong> Im Chrome-Menü „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen.</p>
+<p id="offline-ready" role="status" hidden>Der Kalender ist auf diesem Gerät auch offline verfügbar.</p>
+</div>
+</details>
 </main>
 <footer><span>✦</span> Für Emma, von Paul.</footer>
 </div>
