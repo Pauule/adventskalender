@@ -2,7 +2,7 @@
 
 // Bump the version whenever the app shell or puzzle content changes.
 const PREFIX = 'emma-advent-' + self.registration.scope + '-';
-const CACHE = PREFIX + 'pwa-v1';
+const CACHE = PREFIX + 'pwa-v2';
 const HOME = new URL('./', self.registration.scope).href;
 const FILES = [
   './', 'index.html', 'style.css', 'app.js', 'raetsel.js', 'pwa.js',
